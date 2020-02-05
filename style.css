@@ -4,6 +4,12 @@ body {
     justify-content: center;
 }
 
+h3{
+    margin:0.5rem;
+}
+
+
+
 header {
     grid-area: header;
     background-color: blue;
@@ -12,6 +18,10 @@ header {
 .sidebar {
     grid-area: sidebar;
     background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .main_content {
@@ -27,7 +37,7 @@ footer {
 .grid_template_container {
     display: grid;
     grid-template-columns: 15vw 50vw;
-    grid-template-rows: 10vw 35vw 5vw;
+    grid-template-rows: 10vw 45vw 5vw;
     grid-template-areas: 
     "header header"
     "sidebar main_content"
