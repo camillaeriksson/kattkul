@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: blueviolet;
+}
+
+.main_content {
+    grid-area: main_content;
+    background-color: coral;
+}
+
+footer {
+    grid-area: footer;
+    background-color: crimson;
+}
+
+.grid_template_container {
+    display: grid;
+    grid-template-columns: 15vw 50vw;
+    grid-template-rows: 10vw 35vw 5vw;
+    grid-template-areas: 
+    "header header"
+    "sidebar main_content"
+    "footer footer";
+}
