@@ -3,6 +3,12 @@ body {
     display: flex;
     justify-content: center;
     color: white;
+    width: 100vw;
+}
+
+html {
+    width: 100vw;
+    margin: 0;
 }
 
 h2{
@@ -34,6 +40,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .header_text {
@@ -137,6 +144,28 @@ footer {
     "footer footer";
 }
 
-@media only screen and (max-width: 550px) {
-    
+
+@media only screen and (max-width: 800px) {
+    .grid_template_container {
+        grid-template-columns: 30vw 70vw;
+        grid-template-rows: 20vh auto 5vh;
+        grid-template-areas: 
+        "header header"
+        "sidebar main_content"
+        "footer footer";
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .grid_template_container {
+        grid-template-columns: 30vw 70vw;
+        grid-template-rows: 20vh auto 5vh;
+        grid-template-areas: 
+        "header header"
+        "main_content main_content"
+        "footer footer";
+    }
+    .sidebar {
+        display: none;
+    }
 }
