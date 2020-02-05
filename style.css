@@ -3,6 +3,12 @@ body {
     display: flex;
     justify-content: center;
     color: white;
+    width: 100vw;
+}
+
+html {
+    width: 100vw;
+    margin: 0;
 }
 
 h2{
@@ -34,6 +40,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .header_text {
@@ -64,14 +71,12 @@ h2 {
 }
 
 .search_input {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 7rem; /* Full-width */
-    padding: 0.5rem 1rem 0.4rem 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
+    background-repeat: no-repeat; 
+    width: 7rem; 
+    padding: 0.5rem 1rem 0.4rem 40px;
+    border: 1px solid #ddd; 
     border-radius: 1rem;
-    margin-bottom: 12px; /* Add some space below the input */
+    margin-bottom: 12px; 
     outline: none;
     margin: 0;
   }
@@ -105,6 +110,7 @@ h2 {
 	background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
 	background-color:#ef027d;
 }
+
 .to_checkout:active {
 	position:relative;
 	top:1px;
@@ -131,9 +137,35 @@ footer {
 .grid_template_container {
     display: grid;
     grid-template-columns: 15vw 50vw;
-    grid-template-rows: 10vw 35vw 5vw;
+    grid-template-rows: 20vh auto 5vh;
     grid-template-areas: 
     "header header"
     "sidebar main_content"
     "footer footer";
+}
+
+
+@media only screen and (max-width: 800px) {
+    .grid_template_container {
+        grid-template-columns: 30vw 70vw;
+        grid-template-rows: 20vh auto 5vh;
+        grid-template-areas: 
+        "header header"
+        "sidebar main_content"
+        "footer footer";
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .grid_template_container {
+        grid-template-columns: 30vw 70vw;
+        grid-template-rows: 20vh auto 5vh;
+        grid-template-areas: 
+        "header header"
+        "main_content main_content"
+        "footer footer";
+    }
+    .sidebar {
+        display: none;
+    }
 }
