@@ -109,3 +109,7 @@ footer {
     "sidebar main_content"
     "footer footer";
 }
+
+@media only screen and (max-width: 550px) {
+    
+}
