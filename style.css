@@ -6,7 +6,84 @@ body {
 
 header {
     grid-area: header;
-    background-color: blue;
+    background-color: #fcd6e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    letter-spacing: 0.7rem;
+    background: -webkit-linear-gradient( #ff5bb0, #ef027d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+h2 {
+    font-size: 0.9rem;
+    margin: 0;
+    letter-spacing: 0.2rem;
+    position: relative;
+    top: -1rem;
+    font-family: arial;
+    color: #ef027d;
+    font-style: italic;
+}
+
+.search_input {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 7rem; /* Full-width */
+    padding: 0.5rem 1rem 0.4rem 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    border-radius: 1rem;
+    margin-bottom: 12px; /* Add some space below the input */
+    outline: none;
+    margin: 0;
+  }
+
+  .fa-search {
+      position: relative;
+      right: 10rem;
+  }
+
+  .fa-shopping-cart {
+    position: relative;
+    right: 2rem;
+    color: white;
+  }
+
+  .to_checkout {
+	box-shadow:inset 0px 1px 0px 0px #fbafe3;
+	background:linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+	background-color:#ff5bb0;
+	border-radius:11px;
+	border:1px solid #ee1eb5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	padding:0.5rem 2.4rem 0.4rem 0.7rem;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c70067;
+}
+.to_checkout:hover {
+	background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+	background-color:#ef027d;
+}
+.to_checkout:active {
+	position:relative;
+	top:1px;
 }
 
 .sidebar {
