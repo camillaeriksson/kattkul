@@ -1,18 +1,20 @@
-let img = document.getElementById("img") as HTMLElement;
+let img: HTMLElement | null = document.getElementById("img");
 
 let images = ["./media/pics/cat1.jpg", "./media/pics/cat2.jpg", "./media/pics/cat3.jpg"];
 
+
+type slideFunc = () => void
+
 let x = 0;
 
-function slide() {
+let slider: slideFunc = () => {
     if (x < images.length) {
-        x = x + 1;
-    }
-    else {
+        x++;
+    } else {
         x = 1;
     }
 
-    img.innerHTML = "<img src=" + images[x - 1] + ">";
+    img ? img.innerHTML = "<img src=" + images[x - 1] + ">" : null
 }
 
-setInterval(slide, 2000) 
+setInterval(slider, 2000) 
