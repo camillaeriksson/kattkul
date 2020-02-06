@@ -138,9 +138,9 @@ p:hover {
   justify-content: center;
 }
 
-img {
-width: 45rem;
-height: 20rem;
+.slider_pic {
+width: 45vw;
+height: 35vh;
 object-fit: cover;
 border-radius: 2rem;
 margin-top: 1rem;
@@ -171,6 +171,10 @@ footer {
         "sidebar main_content"
         "footer footer";
     }
+    .slider_pic {
+        width: 60vw;
+        height: 20vh;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -184,5 +188,10 @@ footer {
     }
     .sidebar {
         display: none;
+    }
+
+    .slider_pic {
+        width: 90vw;
+        height: 20vh;
     }
 }
