@@ -1,25 +1,17 @@
 "use strict";
-var slideIndex = 0;
-showSlides();
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    console.log(slides);
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+let img = document.getElementById("img");
+let images = ["./assets/pics/cat1.jpg", "./assets/pics/cat2.jpg", "./assets/pics/cat3.jpg"];
+let x = 0;
+function slide() {
+    if (x < images.length) {
+        x = x + 1;
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
+    else {
+        x = 1;
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 2000);
+    img.innerHTML = "<img src=" + images[x - 1] + ">";
 }
+setInterval(slide, 2000);
 let message2 = "Wohoo cats!!";
 console.log(message2);
 //# sourceMappingURL=bundle.js.map
