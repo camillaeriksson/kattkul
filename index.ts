@@ -14,7 +14,7 @@ let slider: slideFunc = () => {
         x = 1;
     }
 
-    img ? img.innerHTML = "<img src=" + images[x - 1] + ">" : null
+    img ? img.innerHTML = "<img class='slider_pic' src=" + images[x - 1] + ">" : null
 }
 
 setInterval(slider, 2000) 
