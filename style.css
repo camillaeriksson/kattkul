@@ -31,6 +31,7 @@ h1 {
   font-size: 4rem;
   letter-spacing: 0.7rem;
   background: -webkit-linear-gradient(#ff5bb0, #ef027d);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;

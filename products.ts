@@ -45,7 +45,6 @@ function printBalls() {
     })
 
 }
-}
 
 function printWips() {
     let mainContainer = document.querySelector(".product_pic_container") as HTMLElement;
