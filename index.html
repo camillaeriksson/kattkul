@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>KATTKUL</title>
     <script defer src="./build/bundle.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/89d03a09dd.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/89d03a09dd.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
+<body>
     <div class="grid_template_container">
-      <header>
-        <div class="header_text">
-          <h1>kattkul</h1>
-          <p class="under_liner">- allt din pälskling behöver</p>
-        </div>
-        <div>
-          <input
-            type="text"
-            class="search_input"
-            onkeyup="myFunction()"
-            placeholder="Sök i butiken"
-          /><i class="fas fa-search"></i>
-        </div>
-        <div>
-          <button class="to_checkout">TILL KASSAN</button>
-          <i class="fas fa-shopping-cart"></i>
-        </div>
-      </header>
+        <header>
+            <div class="header_text">
+                <h1>kattkul</h1>
+                <p class="under_liner">- allt din pälskling behöver</p>
+            </div>
+            <div>
+                <input type="text" class="search_input" onkeyup="myFunction()" placeholder="Sök i butiken"><i
+                    class="fas fa-search"></i>
+            </div>
+            <div>
+                <button class="to_checkout">TILL KASSAN</button>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </header>
 
-      <div class="sidebar">
-        <h3>Leksak</h3>
-        <p>Klösträd</p>
-        <p>Vippor</p>
-        <p>Bollar</p>
-        <p>Övrigt</p>
-        <h3>KattVård</h3>
-        <p>Shampoo & Balsam</p>
-        <p>Klippning & Borstar</p>
-        <p>Medicin</p>
-        <h3>Behov</h3>
-        <p>Kattsand</p>
-        <p>Kattlådor</p>
-      </div>
-      <nav class="navbar">
-        <div class="hamburger-menu">
-          <div class="line line1"></div>
-          <div class="line line2"></div>
-          <div class="line line3"></div>
-        </div>
-        <h3>Leksak</h3>
-        <p>Klösträd</p>
-        <p>Vippor</p>
-        <p>Bollar</p>
-        <p>Övrigt</p>
-        <h3>KattVård</h3>
-        <p>Shampoo & Balsam</p>
-        <p>Klippning & Borstar</p>
-        <p>Medicin</p>
-        <h3>Behov</h3>
-        <p>Kattsand</p>
-        <p>Kattlådor</p>
-      </nav>
-      <div class="main_content">
-        <div class="slider">
-          <div id="img">
-            <img class="slider_pic" src="./media/pics/cat3.jpg" />
-          </div>
-        </div>
-      </div>
+        <div class="sidebar navbar">
+            <div class="hamburger-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            <h3>Leksak</h3>
+            <p>Klösträd</p>
+            <p onclick="printWips()">Vippor</p>
+            <p onclick="printBalls()">Bollar</p>
+            <p>Övrigt</p>
+            <h3>KattVård</h3>
+            <p>Shampoo & Balsam</p>
+            <p>Klippning & Borstar</p>
+            <p>Medicin</p>
+            <h3>Behov</h3>
+            <p>Kattsand</p>
+            <p>Kattlådor</p>
 
-      <footer></footer>
+        </div>
+        </header>
+        <!-- <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            <h3>Leksak</h3>
+            <p>Klösträd</p>
+            <p>Vippor</p>
+            <p>Bollar</p>
+            <p>Övrigt</p>
+            <h3>KattVård</h3>
+            <p>Shampoo & Balsam</p>
+            <p>Klippning & Borstar</p>
+            <p>Medicin</p>
+            <h3>Behov</h3>
+            <p>Kattsand</p>
+            <p>Kattlådor</p>
+        </nav> -->
+        <div class="main_content">
+            <div class="product_pic_container">
+                <div class="slider">
+                    <div id="img">
+                        <img class="slider_pic" src="./media/pics/cat3.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
     </div>
-  </body>
+</body>
+
 </html>
