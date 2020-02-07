@@ -1,4 +1,11 @@
 "use strict";
+const menuIcon = document.querySelector(".hamburger-menu");
+menuIcon.addEventListener("click", burgerMenu);
+function burgerMenu() {
+    const mobileNav = document.querySelector(".navbar");
+    mobileNav.classList.toggle("change");
+    menuIcon.classList.toggle("move");
+}
 let img = document.getElementById("img");
 let images = ["./media/pics/cat1.jpg", "./media/pics/cat2.jpg", "./media/pics/cat3.jpg"];
 let x = 0;
@@ -35,15 +42,19 @@ const wip = {
 function printBalls() {
     let mainContainer = document.querySelector(".product_pic_container");
     mainContainer.innerHTML = "";
-    let imgDiv = document.createElement("div");
-    imgDiv.className = "imgDiv";
     balls.imgList.forEach(url => {
+        let imgDiv = document.createElement("div");
+        imgDiv.className = "imgDiv";
         let img = document.createElement("img");
         img.src = url;
         img.className = "product_pictures";
         imgDiv.appendChild(img);
+        let button = document.createElement("button");
+        button.className = "buy_button";
+        button.innerHTML = "LÄGG I VARUKORG";
+        imgDiv.appendChild(button);
+        mainContainer.appendChild(imgDiv);
     });
-    mainContainer.appendChild(imgDiv);
 }
 function printWips() {
     let mainContainer = document.querySelector(".product_pic_container");

@@ -28,18 +28,23 @@ function printBalls() {
     let mainContainer = document.querySelector(".product_pic_container") as HTMLElement;
     mainContainer.innerHTML = "";
 
-    let imgDiv = document.createElement("div");
-
-    imgDiv.className = "imgDiv";
 
     balls.imgList.forEach(url => {
+        let imgDiv = document.createElement("div");
+
+        imgDiv.className = "imgDiv";
         let img = document.createElement("img");
         img.src = url;
-        img.className = "product_pictures"
+        img.className = "product_pictures";
         imgDiv.appendChild(img);
+        let button = document.createElement("button");
+        button.className = "buy_button";
+        button.innerHTML = "LÄGG I VARUKORG"
+        imgDiv.appendChild(button);
+        mainContainer.appendChild(imgDiv);
     })
 
-    mainContainer.appendChild(imgDiv);
+}
 }
 
 function printWips() {
