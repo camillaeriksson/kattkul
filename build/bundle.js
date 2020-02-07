@@ -1,4 +1,11 @@
 "use strict";
+const menuIcon = document.querySelector(".hamburger-menu");
+menuIcon.addEventListener("click", burgerMenu);
+function burgerMenu() {
+    const mobileNav = document.querySelector(".navbar");
+    mobileNav.classList.toggle("change");
+    menuIcon.classList.toggle("move");
+}
 let img = document.getElementById("img");
 let images = ["./media/pics/cat1.jpg", "./media/pics/cat2.jpg", "./media/pics/cat3.jpg"];
 let x = 0;
