@@ -84,6 +84,7 @@ h1 {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #c70067;
 }
+
 .to_checkout:hover {
 	background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
 	background-color:#ef027d;
@@ -125,6 +126,7 @@ p:hover {
   letter-spacing: 0.2rem;
   cursor: pointer;
 }
+
 .main_content {
     grid-area: main_content;
     background-color: white;
@@ -132,18 +134,64 @@ p:hover {
 
 .slider {
   width: 100%;
-  height: 10rem;
+  height: 40vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
 }
 
 .slider_pic {
-width: 45vw;
-height: 35vh;
-object-fit: cover;
-border-radius: 2rem;
-margin-top: 1rem;
+    width: 45vw;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.imgDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product_pictures {
+    width: 9rem;
+    height: 9rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    border: 0.1rem solid rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+.product_pic_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.buy_button {
+    box-shadow:inset 0px 1px 0px 0px #fbafe3;
+	background:linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+	background-color:#ff5bb0;
+	border-radius:11px;
+	border:1px solid #ee1eb5;
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#ffffff;
+    font-family:Arial;
+    font-size: 0.7rem;
+    height: 1.5rem;
+    width: 8.2rem;
+    position: relative;
+    top: -3rem;
+    outline: none;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c70067;
+
 }
 
 footer {
@@ -174,6 +222,11 @@ footer {
     .slider_pic {
         width: 60vw;
         height: 20vh;
+    }
+
+    .slider {
+        width: 100%;
+        height: 25vh;
     }
 }
 
